@@ -55,6 +55,10 @@ html{
 .mt-16{
     margin-top: 16px !important;
 }
+
+.mt-32{
+    margin-top: 32px !important;
+}
 /*
  1. Từ ngoài vào trong
 2. Từ trên xuống dưới
@@ -141,6 +145,14 @@ html{
     font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
@@ -151,6 +163,15 @@ html{
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color:#000;
+}
+
+#header .menu-icon,
 #header .search-icon{
     font-size: 20px;
     color: #fff;
@@ -162,7 +183,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;  /*chiều dọc = 50% của chiều ngang*/
-    background: url('/assets/img/chicago.jpg') top center /cover no-repeat ;
+    background: url('../img/chicago.jpg') top center /cover no-repeat ;
 }
 
 #slider .text-content{
@@ -179,16 +200,18 @@ html{
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
-#content{
 
-}
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -212,7 +235,7 @@ html{
 }
 
 #content .members-list{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name{
@@ -264,7 +287,7 @@ html{
 
 /* Place  */
 .Places-list{
-    margin-top: 32px ; 
+    margin-top: 16px ; 
 }
 
 
@@ -305,6 +328,9 @@ html{
     padding: 11px 15px;
     display: inline-block;
     margin-top: 15px;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .place-buy-btn:hover{
@@ -437,6 +463,14 @@ html{
 {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-form{
